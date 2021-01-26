@@ -1,10 +1,10 @@
 import React from 'react';
+import Slides from './Carousel';
 
 const Home = () => {
 	return (
 		<>
-			<h1>Bienvenido a La Azucena</h1>
-			<p>kjdsahjkdashjkdashdjkas</p>
+			<Slides></Slides>
 		</>
 	);
 };
