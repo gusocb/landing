@@ -10,8 +10,8 @@ import Contact from './components/Contact';
 const App = () => {
 	return (
 		<>
-			<Header />
 			<Layout>
+				<Header />
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/nosotros" component={AboutUs} />
