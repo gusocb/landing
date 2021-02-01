@@ -1,5 +1,6 @@
 import React from 'react';
 import Slides from './Carousel';
+import Footer from './Footer';
 import MainMessage from './MainMessage';
 import ServicesBanner from './ServicesBanner';
 
@@ -9,6 +10,7 @@ const Home = () => {
 			<Slides />
 			<MainMessage />
 			<ServicesBanner />
+			<Footer />
 		</>
 	);
 };
