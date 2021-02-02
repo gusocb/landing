@@ -1,42 +1,47 @@
-import React from 'react';
-import { Card } from 'react-bootstrap';
-import styled from 'styled-components';
-
-const ServiceCard = styled(Card)`
-	width: 18rem;
-	margin-bottom: 20px;
-`;
-
-const ServicesContainer = styled.div`
-	display: flex;
-	justify-content: space-between;
-`;
+import React from "react";
+import { Card, Row, Col, Container } from "react-bootstrap";
+import credit from "../assets/credit-card.png";
 
 const ServicesBanner = () => {
-	return (
-		<ServicesContainer>
-			<ServiceCard>
-				<Card.Body>
-					<Card.Title>Pago con tarjeta</Card.Title>
-					<Card.Text>Crédito, débito, vales y apoyos CDMX</Card.Text>
-				</Card.Body>
-			</ServiceCard>
-			<ServiceCard>
-				<Card.Body>
-					<Card.Title>Pago de servicios</Card.Title>
-					<Card.Text>
-						Totalplay, Izzi, Sky, Telmex, Línea de Captura CDMX
-					</Card.Text>
-				</Card.Body>
-			</ServiceCard>
-			<ServiceCard>
-				<Card.Body>
-					<Card.Title>Recargas</Card.Title>
-					<Card.Text>Telcel, AT&T, </Card.Text>
-				</Card.Body>
-			</ServiceCard>
-		</ServicesContainer>
-	);
+  return (
+    <Container className="text-center">
+      <Row>
+        <Col>
+          <Card lg={4} md={12} className="mb-4">
+            <Card.Img src={credit} alt="tarjeta" variant="top" />
+            <Card.Body>
+              <Card.Title>Pago con tarjeta</Card.Title>
+              <Card.Text>
+                Aceptamos credito, debito, vales y apoyos CDMX
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card lg={4} md={12} className="mb-4">
+            <Card.Img src={credit} alt="tarjeta" variant="top" />
+            <Card.Body>
+              <Card.Title>Pago con tarjeta</Card.Title>
+              <Card.Text>
+                Aceptamos credito, debito, vales y apoyos CDMX
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card lg={4} md={12} className="mb-4">
+            <Card.Img src={credit} alt="tarjeta" variant="top" />
+            <Card.Body>
+              <Card.Title>Pago con tarjeta</Card.Title>
+              <Card.Text>
+                Aceptamos credito, debito, vales y apoyos CDMX
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  );
 };
 
 export default ServicesBanner;

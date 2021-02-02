@@ -12,7 +12,7 @@ const Header = () => {
           <Nav className="ml-auto">
             <Nav.Item>
               <Nav.Link eventKey="1" as={Link} to="/">
-                khe
+                Inicio
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
