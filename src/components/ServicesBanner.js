@@ -3,6 +3,14 @@ import { Card, Row, Col, Container } from 'react-bootstrap';
 import credit from '../assets/credit-card.png';
 import smarthphone from '../assets/smartphone.png';
 import wifi from '../assets/wifi.png';
+import styled from 'styled-components';
+
+const CardImage = styled.img`
+	width: 30%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 5%;
+`;
 
 const ServicesBanner = () => {
 	return (
@@ -10,7 +18,7 @@ const ServicesBanner = () => {
 			<Row>
 				<Col md>
 					<Card className="mb-4">
-						<Card.Img src={credit} alt="tarjeta" variant="top" />
+						<CardImage src={credit} alt="tarjeta" />
 						<Card.Body>
 							<Card.Title>Pago con tarjeta</Card.Title>
 							<Card.Text>
@@ -21,7 +29,7 @@ const ServicesBanner = () => {
 				</Col>
 				<Col md>
 					<Card className="mb-4">
-						<Card.Img src={wifi} alt="tarjeta" variant="top" />
+						<CardImage src={wifi} alt="servicios" />
 						<Card.Body>
 							<Card.Title>Pago de servicios</Card.Title>
 							<Card.Text>
@@ -33,11 +41,7 @@ const ServicesBanner = () => {
 				</Col>
 				<Col md>
 					<Card className="mb-4">
-						<Card.Img
-							src={smarthphone}
-							alt="tarjeta"
-							variant="top"
-						/>
+						<CardImage src={smarthphone} alt="tarjeta" />
 						<Card.Body>
 							<Card.Title>Recargas telefónicas</Card.Title>
 							<Card.Text>
