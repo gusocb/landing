@@ -1,10 +1,14 @@
 import React from 'react';
+import Slides from './Carousel';
+import MainMessage from './MainMessage';
+import ServicesBanner from './ServicesBanner';
 
 const Home = () => {
 	return (
 		<>
-			<h1>Bienvenido a La Azucena</h1>
-			<p>kjdsahjkdashjkdashdjkas</p>
+			<Slides />
+			<MainMessage />
+			<ServicesBanner />
 		</>
 	);
 };
