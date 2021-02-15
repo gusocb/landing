@@ -1,10 +1,10 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
-import AboutUs from './components/AboutUs';
-import Home from './components/Home';
-import Services from './components/Services';
-import Contact from './components/Contact';
+import AboutUs from './pages/AboutUs';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Contact from './pages/Contact';
 import Footer from './components/Footer';
 
 const App = () => {
