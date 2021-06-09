@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar, Image } from 'react-bootstrap';
 import logo from '../assets/logo.svg';
 import styled from 'styled-components';
@@ -23,26 +22,22 @@ const Header = () => {
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="ml-auto">
 							<Nav.Item>
-								<Nav.Link eventKey="1" as={Link} to="/">
+								<Nav.Link eventKey="1" to="/">
 									Inicio
 								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
-								<Nav.Link eventKey="2" as={Link} to="/nosotros">
+								<Nav.Link eventKey="2" to="/nosotros">
 									Nosotros
 								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
-								<Nav.Link
-									eventKey="3"
-									as={Link}
-									to="/servicios"
-								>
+								<Nav.Link eventKey="3" to="/servicios">
 									Servicios
 								</Nav.Link>
 							</Nav.Item>
 							<Nav.Item>
-								<Nav.Link eventKey="4" as={Link} to="/contacto">
+								<Nav.Link eventKey="4" to="/contacto">
 									Contacto
 								</Nav.Link>
 							</Nav.Item>
